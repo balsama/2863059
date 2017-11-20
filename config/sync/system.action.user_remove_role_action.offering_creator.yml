@@ -1,0 +1,14 @@
+uuid: 7186bb16-6779-40a1-9ff6-7a6ae211c25b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.offering_creator
+  module:
+    - user
+id: user_remove_role_action.offering_creator
+label: 'Remove the Offering creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: offering_creator

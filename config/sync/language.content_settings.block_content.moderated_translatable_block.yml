@@ -1,0 +1,16 @@
+uuid: 38a4edf8-4217-4e74-9e64-e4458b801c4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.moderated_translatable_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.moderated_translatable_block
+target_entity_type_id: block_content
+target_bundle: moderated_translatable_block
+default_langcode: site_default
+language_alterable: false

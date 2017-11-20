@@ -1,0 +1,23 @@
+uuid: ed9a7807-865a-40b4-8129-3ee24d83ba66
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.moderated_translatable_block
+    - field.field.block_content.moderated_translatable_block.body
+  module:
+    - text
+id: block_content.moderated_translatable_block.default
+targetEntityType: block_content
+bundle: moderated_translatable_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

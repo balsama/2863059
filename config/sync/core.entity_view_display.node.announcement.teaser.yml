@@ -1,0 +1,24 @@
+uuid: 4ae942c6-4f0f-4189-a97e-9064ed50276f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.announcement.field_announcement_text
+    - node.type.announcement
+  module:
+    - user
+id: node.announcement.teaser
+targetEntityType: node
+bundle: announcement
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  field_announcement_text: true
+  langcode: true

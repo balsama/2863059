@@ -1,0 +1,14 @@
+uuid: 3fa97089-e872-4666-9df3-4a777f415293
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.unmoderated_creator
+  module:
+    - user
+id: user_remove_role_action.unmoderated_creator
+label: 'Remove the Unmoderated creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: unmoderated_creator

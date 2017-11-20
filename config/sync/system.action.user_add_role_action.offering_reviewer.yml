@@ -1,0 +1,14 @@
+uuid: 4c346006-2e6e-4977-8067-23b1e129fcad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.offering_reviewer
+  module:
+    - user
+id: user_add_role_action.offering_reviewer
+label: 'Add the Offering reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: offering_reviewer

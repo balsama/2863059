@@ -1,0 +1,29 @@
+uuid: f11e1e54-801d-48e2-b64f-f4180d1e6272
+langcode: en
+status: true
+dependencies: {  }
+id: press_release_creator
+label: 'Press Release creator'
+weight: 9
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node press_release content'
+  - 'administer panelizer node press_release layout'
+  - 'change layouts in place editing'
+  - 'create press_release content'
+  - 'create url aliases'
+  - 'edit own press_release content'
+  - 'use draft_draft transition'
+  - 'use draft_needs_review transition'
+  - 'use needs_review_needs_review transition'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view press_release revisions'

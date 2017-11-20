@@ -1,0 +1,29 @@
+uuid: 92e69ce8-379d-4c81-9150-784d37dac312
+langcode: en
+status: true
+dependencies: {  }
+id: article_creator
+label: 'Article creator'
+weight: 7
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node article content'
+  - 'administer panelizer node article layout'
+  - 'change layouts in place editing'
+  - 'create article content'
+  - 'create url aliases'
+  - 'edit own article content'
+  - 'use draft_draft transition'
+  - 'use draft_needs_review transition'
+  - 'use needs_review_needs_review transition'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view article revisions'
+  - 'view latest version'
+  - 'view own unpublished content'

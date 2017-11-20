@@ -1,0 +1,14 @@
+uuid: 9e322e3f-c469-44c1-9825-262d1ad4dfa7
+name: 'Content Moderation Migration Test'
+mail: admin@example.com
+slogan: 'I''ll break it. I guarantee it.'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

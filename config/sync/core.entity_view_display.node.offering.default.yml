@@ -1,0 +1,39 @@
+uuid: 6cca92e3-2598-4a98-82ae-e7d8c6045f7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.offering.body
+    - field.field.node.offering.field_offer_type
+    - node.type.offering
+  module:
+    - text
+    - user
+id: node.offering.default
+targetEntityType: node
+bundle: offering
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_offer_type:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  langcode: true

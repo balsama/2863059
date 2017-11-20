@@ -1,0 +1,28 @@
+uuid: ef9450bd-666b-496b-845f-377dc40cca83
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - workbench_moderation
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - published
+      - archived
+      - draft
+      - needs_legal_review
+      - needs_review
+    default_moderation_state: draft
+name: Offering
+type: offering
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

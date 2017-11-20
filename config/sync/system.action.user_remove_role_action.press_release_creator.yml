@@ -1,0 +1,14 @@
+uuid: 875316c7-fbd5-4839-beaa-1b6115acf1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.press_release_creator
+  module:
+    - user
+id: user_remove_role_action.press_release_creator
+label: 'Remove the Press Release creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: press_release_creator

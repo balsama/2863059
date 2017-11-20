@@ -1,0 +1,14 @@
+uuid: d5e9c4e9-2f2f-4601-afbc-10d4236553f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.offering_reviewer
+  module:
+    - user
+id: user_remove_role_action.offering_reviewer
+label: 'Remove the Offering reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: offering_reviewer

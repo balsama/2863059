@@ -1,0 +1,14 @@
+uuid: 8f443d4c-e729-4cbf-aa73-f666a516e3f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.offering_creator
+  module:
+    - user
+id: user_add_role_action.offering_creator
+label: 'Add the Offering creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: offering_creator

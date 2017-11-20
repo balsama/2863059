@@ -1,0 +1,14 @@
+uuid: 9ee94cc0-affc-4f8d-8491-361e57b6b6bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.announcement_creator
+  module:
+    - user
+id: user_remove_role_action.announcement_creator
+label: 'Remove the Announcement creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: announcement_creator

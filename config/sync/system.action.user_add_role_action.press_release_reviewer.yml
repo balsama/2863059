@@ -1,0 +1,14 @@
+uuid: 0e987741-97cd-47bd-b247-053e4c064fdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.press_release_reviewer
+  module:
+    - user
+id: user_add_role_action.press_release_reviewer
+label: 'Add the Press Release reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: press_release_reviewer

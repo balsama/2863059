@@ -1,0 +1,14 @@
+uuid: 551e91aa-2dc1-4a3d-8879-0220d31c74cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.unmoderated_reviewer
+  module:
+    - user
+id: user_remove_role_action.unmoderated_reviewer
+label: 'Remove the Unmoderated reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: unmoderated_reviewer

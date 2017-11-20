@@ -1,0 +1,28 @@
+uuid: 07fdd93e-4c50-4d94-8dc3-49d3ff4c54c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - workbench_moderation
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - published
+      - archived
+      - draft
+      - needs_legal_review
+      - needs_review
+    default_moderation_state: draft
+name: Announcement
+type: announcement
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

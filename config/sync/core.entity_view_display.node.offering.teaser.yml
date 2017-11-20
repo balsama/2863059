@@ -1,0 +1,34 @@
+uuid: a72a494d-930f-46ce-99bf-407138ae0426
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.offering.body
+    - field.field.node.offering.field_offer_type
+    - node.type.offering
+  module:
+    - text
+    - user
+id: node.offering.teaser
+targetEntityType: node
+bundle: offering
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  field_offer_type: true
+  langcode: true

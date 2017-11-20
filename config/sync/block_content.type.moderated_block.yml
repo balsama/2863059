@@ -1,0 +1,19 @@
+uuid: 8d3cd7c9-6917-4453-9339-bdbdeb4ea0e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - workbench_moderation
+third_party_settings:
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - published
+      - archived
+      - draft
+      - needs_review
+    default_moderation_state: draft
+id: moderated_block
+label: 'Moderated Block'
+revision: 1
+description: ''

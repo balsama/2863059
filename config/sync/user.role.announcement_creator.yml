@@ -1,0 +1,29 @@
+uuid: ca03218d-5d6c-49b9-82f1-358cd7afd8ca
+langcode: en
+status: true
+dependencies: {  }
+id: announcement_creator
+label: 'Announcement creator'
+weight: 11
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node announcement content'
+  - 'administer panelizer node announcement layout'
+  - 'change layouts in place editing'
+  - 'create announcement content'
+  - 'create url aliases'
+  - 'edit own announcement content'
+  - 'use draft_draft transition'
+  - 'use draft_needs_review transition'
+  - 'use needs_review_needs_review transition'
+  - 'use text format rich_text'
+  - 'view announcement revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'

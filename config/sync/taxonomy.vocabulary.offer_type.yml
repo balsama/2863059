@@ -1,0 +1,9 @@
+uuid: 7dbbe789-5fec-4139-99a8-8699c6f6b016
+langcode: en
+status: true
+dependencies: {  }
+name: 'Offer Type'
+vid: offer_type
+description: ''
+hierarchy: 0
+weight: 0

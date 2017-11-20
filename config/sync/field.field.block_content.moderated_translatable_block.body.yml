@@ -1,0 +1,22 @@
+uuid: 0afa079f-4c08-4e94-91f9-337433f4102e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.moderated_translatable_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.moderated_translatable_block.body
+field_name: body
+entity_type: block_content
+bundle: moderated_translatable_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,14 @@
+uuid: bf1e8a89-0d86-4080-9d04-7d030dfcb070
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.press_release_reviewer
+  module:
+    - user
+id: user_remove_role_action.press_release_reviewer
+label: 'Remove the Press Release reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: press_release_reviewer

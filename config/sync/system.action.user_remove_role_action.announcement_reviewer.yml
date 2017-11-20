@@ -1,0 +1,14 @@
+uuid: 5798b7c8-a25c-4139-845b-e40c91444fd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.announcement_reviewer
+  module:
+    - user
+id: user_remove_role_action.announcement_reviewer
+label: 'Remove the Announcement reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: announcement_reviewer

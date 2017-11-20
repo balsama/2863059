@@ -1,0 +1,23 @@
+uuid: fecdce96-3a03-4543-ac8c-fde88c6c0abc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.moderated_block
+    - field.field.block_content.moderated_block.body
+  module:
+    - text
+id: block_content.moderated_block.default
+targetEntityType: block_content
+bundle: moderated_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

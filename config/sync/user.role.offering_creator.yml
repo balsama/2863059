@@ -1,0 +1,29 @@
+uuid: b9daed43-202f-4e99-b53e-9b767e2049f6
+langcode: en
+status: true
+dependencies: {  }
+id: offering_creator
+label: 'Offering creator'
+weight: 13
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node offering content'
+  - 'administer panelizer node offering layout'
+  - 'change layouts in place editing'
+  - 'create offering content'
+  - 'create url aliases'
+  - 'edit own offering content'
+  - 'use draft_draft transition'
+  - 'use draft_needs_review transition'
+  - 'use needs_review_needs_review transition'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view offering revisions'
+  - 'view own unpublished content'

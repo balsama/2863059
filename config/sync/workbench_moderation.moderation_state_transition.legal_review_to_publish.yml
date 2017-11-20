@@ -1,0 +1,12 @@
+uuid: b464f747-fe1d-4c23-a036-24be45d71554
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.needs_legal_review
+    - workbench_moderation.moderation_state.published
+id: legal_review_to_publish
+label: Publish
+stateFrom: needs_legal_review
+stateTo: published
+weight: -5

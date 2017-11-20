@@ -1,0 +1,14 @@
+uuid: 9a31f21a-86bc-40e7-a123-ae987e3be6f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.announcement_creator
+  module:
+    - user
+id: user_add_role_action.announcement_creator
+label: 'Add the Announcement creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: announcement_creator

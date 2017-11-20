@@ -1,0 +1,14 @@
+uuid: fe426d63-113b-4618-ba52-6f83900f54fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.unmoderated_creator
+  module:
+    - user
+id: user_add_role_action.unmoderated_creator
+label: 'Add the Unmoderated creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: unmoderated_creator

@@ -1,0 +1,30 @@
+uuid: faf85f30-0902-45f6-9fec-eaa6c1ddf09c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.announcement.field_announcement_text
+    - node.type.announcement
+  module:
+    - user
+id: node.announcement.default
+targetEntityType: node
+bundle: announcement
+mode: default
+content:
+  field_announcement_text:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  langcode: true
