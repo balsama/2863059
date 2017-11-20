@@ -165,7 +165,7 @@
     ],
     "body": [
         {
-            "value": "<p>This will have a forward edit<\/p>\r\n",
+            "value": "<p>This will have a forward edit<\/p>\r\n<p>Turns out Default Content doesn't support revisions so only the published revision is preserved.<\/p>\r\n",
             "format": "rich_text",
             "summary": "",
             "lang": "en"
