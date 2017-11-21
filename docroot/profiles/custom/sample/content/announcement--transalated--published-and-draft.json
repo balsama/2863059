@@ -1,0 +1,243 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/adam.balsam\/node\/8?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/announcement"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/announcement\/revision_uid": [
+            {
+                "href": "http:\/\/adam.balsam\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/announcement\/uid": [
+            {
+                "href": "http:\/\/adam.balsam\/user\/1?_format=hal_json",
+                "lang": "en"
+            },
+            {
+                "href": "http:\/\/adam.balsam\/user\/1?_format=hal_json",
+                "lang": "it"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 8
+        }
+    ],
+    "uuid": [
+        {
+            "value": "a660ae13-d5c6-4075-a378-5ee7a12de1ec"
+        }
+    ],
+    "vid": [
+        {
+            "value": 13
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        },
+        {
+            "value": "it",
+            "lang": "it"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "announcement"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2017-11-21T14:35:29+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/announcement\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/adam.balsam\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4db6a7c8-2c60-488b-8fee-8baa38ea2d5c"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/announcement\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/adam.balsam\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4db6a7c8-2c60-488b-8fee-8baa38ea2d5c"
+                    }
+                ],
+                "lang": "en"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/adam.balsam\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4db6a7c8-2c60-488b-8fee-8baa38ea2d5c"
+                    }
+                ],
+                "lang": "it"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        },
+        {
+            "value": false,
+            "lang": "it"
+        }
+    ],
+    "title": [
+        {
+            "value": "Announcement - with translation - en published",
+            "lang": "en"
+        },
+        {
+            "value": "Announcement - with translation - it draft",
+            "lang": "it"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-11-21T14:34:12+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        },
+        {
+            "value": "2017-11-21T14:34:59+00:00",
+            "lang": "it",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-11-21T14:35:09+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        },
+        {
+            "value": "2017-11-21T14:35:29+00:00",
+            "lang": "it",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "en"
+        },
+        {
+            "value": true,
+            "lang": "it"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        },
+        {
+            "value": false,
+            "lang": "it"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        },
+        {
+            "value": false,
+            "lang": "it"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "it"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "lang": "en"
+        },
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "it",
+            "lang": "it"
+        }
+    ],
+    "moderation_state": [
+        {
+            "target_id": "published",
+            "lang": "en"
+        },
+        {
+            "target_id": "draft",
+            "lang": "it"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        },
+        {
+            "value": "en",
+            "lang": "it"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        },
+        {
+            "value": false,
+            "lang": "it"
+        }
+    ],
+    "field_announcement_text": [
+        {
+            "value": "I'm draft!"
+        }
+    ]
+}
