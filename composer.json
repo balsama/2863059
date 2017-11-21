@@ -43,7 +43,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/phenaproxima/drupal-moderation"
+            "url": "https://github.com/phenaproxima/drupal-moderation.git"
         }
     ],
     "scripts": {
