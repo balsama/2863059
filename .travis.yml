@@ -84,7 +84,7 @@ install:
   - cd $TRAVIS_BUILD_DIR/docroot
   - drush updatedb --yes
   - cd $TRAVIS_BUILD_DIR
-  - ./bin/drupal update:lightning
+  - ./bin/drupal update:lightning --no-interaction
 
   # Generate the behat config.
   - cd $TRAVIS_BUILD_DIR
