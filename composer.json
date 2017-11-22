@@ -36,14 +36,6 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/phenaproxima/lightning.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/phenaproxima/drupal-moderation.git"
         }
     ],
     "scripts": {
