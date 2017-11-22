@@ -77,7 +77,7 @@ install:
   # Migrate to Content Moderation.
   - 'if [ $VERSION = "CM_MIGRATE" ]; then
       cd $TRAVIS_BUILD_DIR;
-      composer require acquia/lightning:dev-content-moderation-api --no-update;
+      composer require acquia/lightning:2.2.4-alpha1 --no-update;
       composer update acquia/lightning --with-dependencies;
       composer update acquia/lightning --with-dependencies;
     fi;'
