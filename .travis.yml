@@ -84,6 +84,7 @@ install:
     fi;'
 
   # Confirm versions of dependencies.
+  - cd $TRAVIS_BUILD_DIR
   - composer info acquia/lightning
   - composer info drupal/wbm2cm
 
