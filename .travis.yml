@@ -80,7 +80,12 @@ install:
       composer require acquia/lightning:dev-content-moderation-migration --no-update;
       composer update acquia/lightning --with-dependencies;
       composer update acquia/lightning --with-dependencies;
+      composer update acquia/lightning --with-dependencies;
     fi;'
+
+  # Confirm versions of dependencies.
+  - composer info acquia/lightning
+  - composer info drupal/wbm2cm
 
   # Run updates, if necessary.
   - cd $TRAVIS_BUILD_DIR/docroot
