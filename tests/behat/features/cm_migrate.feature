@@ -1,4 +1,4 @@
-@lightning @workflow @workflow_migrate @api
+@lightning @workflow @workflow_pre_migrate @api
 Feature: Workflow migration
   As a Lightning user, my existing configuration and content should be migrated
   to the core Content Moderation module while prederving existing functionality.
