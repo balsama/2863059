@@ -1,4 +1,4 @@
-@lightning @workflow @workflow_pre_migrate @api
+@lightning @workflow @workflow_post_migrate @api
 Feature: Workflow migration
   As a Lightning user, my existing configuration and content should be migrated
   to the core Content Moderation module while prederving existing functionality.
@@ -11,15 +11,15 @@ Feature: Workflow migration
 
     Examples:
     | title                                          | moderation_state   |
-    | Article Draft                                  | Draft              |
-    | Article - Needs Review                         | Needs Review       |
-    | Article - Published                            | Published          |
-    | Article - Archived                             | Archived           |
-    | Announcement - NLR                             | Needs Legal Review |
-    | Announcement - with translation - en           | Published          |
-    | Announcement - with translation - it           | Published          |
-    | Announcement - with translation - en published | Published          |
-    | Announcement - with translation - it draft     | Draft              |
+    | Article Draft                                  | draft              |
+    | Article - Needs Review                         | needs_review       |
+    | Article - Published                            | published          |
+    | Article - Archived                             | archived           |
+    | Announcement - NLR                             | needs_legal_review |
+    | Announcement - with translation - en           | published          |
+    | Announcement - with translation - it           | published          |
+    | Announcement - with translation - en published | published          |
+    | Announcement - with translation - it draft     | draft              |
 
   @d619fa06
   Scenario Outline: Draft and Needs Review articles can be transitioned to Draft, Needs Review,
@@ -27,7 +27,7 @@ Feature: Workflow migration
     Given I am logged in as a user with the administrator role
     When I visit "/node/<nid>"
     And I visit the edit form
-    Then the "Moderation state" field should have options:
+    Then the "Change to" field should have options:
       """
       Draft
       Needs Review
@@ -45,7 +45,7 @@ Feature: Workflow migration
     Given I am logged in as a user with the administrator role
     When I visit "/node/<nid>"
     And I visit the edit form
-    Then the "Moderation state" field should have options:
+    Then the "Change to" field should have options:
       """
       Draft
       Published
@@ -62,7 +62,7 @@ Feature: Workflow migration
     Given I am logged in as a user with the administrator role
     When I visit "/node/<nid>"
     And I visit the edit form
-    Then the "Moderation state" field should have options:
+    Then the "Change to" field should have options:
       """
       Published
       """

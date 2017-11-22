@@ -13,8 +13,8 @@ php:
   - 7.0
 
 env:
-  - VERSION=STABLE
-  - VERSION=CM_MIGRATE
+  - VERSION=STABLE TAGS=workflow_pre_migrate
+  - VERSION=CM_MIGRATE TAGS=workflow_post_migrate
 
 addons:
   apt:
@@ -108,7 +108,7 @@ before_script:
   - sleep 5
 
 script:
-  - ../bin/behat --strict --config ./sites/default/files/behat.yml --tags=workflow_migrate
+  - ../bin/behat --strict --config ./sites/default/files/behat.yml --tags=$TAGS
 
 matrix:
   fast_finish: true
