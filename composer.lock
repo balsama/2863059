@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "e9df3ad966f1c2ec08782462b86494f45956ac40"
+                "reference": "f67720f6ee1716cc294507098b846aa88ad0dde2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/e9df3ad966f1c2ec08782462b86494f45956ac40",
-                "reference": "e9df3ad966f1c2ec08782462b86494f45956ac40",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/f67720f6ee1716cc294507098b846aa88ad0dde2",
+                "reference": "f67720f6ee1716cc294507098b846aa88ad0dde2",
                 "shasum": ""
             },
             "require": {
@@ -174,7 +174,7 @@
                 "GPL-2.0+"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2017-11-22T17:19:27+00:00"
+            "time": "2017-11-22T19:55:59+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -3646,7 +3646,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1506893943",
+                    "datestamp": "1511480585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3862,7 +3862,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/wbm2cm",
-                "reference": "0424cfad1d545dc322a6103ce7aa3967e34b0153"
+                "reference": "3df45abd1d306a02b325fbe935d9a3c8a98c8ee0"
             },
             "require": {
                 "drupal/core": "~8.4"
@@ -3885,8 +3885,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha1+0-dev",
-                    "datestamp": "1511361785",
+                    "version": "8.x-2.0-alpha1+2-dev",
+                    "datestamp": "1511374984",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3943,7 +3943,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/wbm2cm"
             },
-            "time": "2017-11-22T17:12:58+00:00"
+            "time": "2017-11-28T20:06:48+00:00"
         },
         {
             "name": "drupal/workbench_moderation",
