@@ -71,3 +71,20 @@ Feature: Workflow migration
       | nid |
       | 4   |
       | 5   |
+
+  @feecf207
+  Scenario Outline: Block entities' moderation state is preserved.
+    Given I am logged in as a user with the administrator role
+    When I visit "/block/<bid>"
+    Then I should see "Current state: <moderation_state>"
+
+    Examples:
+      | bid | moderation_state |
+      | 1   | Needs Review     |
+      | 2   | Published        |
+      | 3   | Published        |
+
+  Scenario: Translated block moderation state is preserved.
+    Given I am logged in as a user with the administrator role
+    When I visit "/it/block/3"
+    Then I should see "Current state: Draft"
