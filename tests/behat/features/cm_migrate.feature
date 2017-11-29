@@ -71,3 +71,9 @@ Feature: Workflow migration
       | nid |
       | 4   |
       | 5   |
+
+  @feecf207
+  Scenario: Block entities' moderation state is preserved.
+    Given I am logged in as a user with the administrator role
+    When I visit "block/<1"
+    Then "Current state" should be "Needs Review"
