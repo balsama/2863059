@@ -76,7 +76,7 @@ Feature: Workflow migration
   Scenario Outline: Block entities' moderation state is preserved.
     Given I am logged in as a user with the administrator role
     When I visit "/block/<bid>"
-    Then I should see "Current state: <moderation_state>"
+    Then I should see "Current state <moderation_state>"
 
     Examples:
       | bid | moderation_state |
@@ -87,4 +87,4 @@ Feature: Workflow migration
   Scenario: Translated block moderation state is preserved.
     Given I am logged in as a user with the administrator role
     When I visit "/it/block/3"
-    Then I should see "Current state: Draft"
+    Then I should see "Current state Draft"
