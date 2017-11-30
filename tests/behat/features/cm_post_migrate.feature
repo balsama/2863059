@@ -10,16 +10,16 @@ Feature: Workflow migration
     Then the moderation state for content "<title>" should be "<moderation_state>"
 
     Examples:
-    | title                                          | moderation_state   |
-    | Article Draft                                  | Draft              |
-    | Article - Needs Review                         | Needs Review       |
-    | Article - Published                            | Published          |
-    | Article - Archived                             | Archived           |
-    | Announcement - NLR                             | Needs Legal Review |
-    | Announcement - with translation - en           | Published          |
-    | Announcement - with translation - it           | Published          |
-    | Announcement - with translation - en published | Published          |
-    | Announcement - with translation - it draft     | Draft              |
+      | title                                          | moderation_state   |
+      | Article Draft                                  | draft              |
+      | Article - Needs Review                         | needs_review       |
+      | Article - Published                            | published          |
+      | Article - Archived                             | archived           |
+      | Announcement - NLR                             | needs_legal_review |
+      | Announcement - with translation - en           | published          |
+      | Announcement - with translation - it           | published          |
+      | Announcement - with translation - en published | published          |
+      | Announcement - with translation - it draft     | draft              |
 
   @d619fa06
   Scenario Outline: Draft and Needs Review articles can be transitioned to Draft, Needs Review,
@@ -35,9 +35,9 @@ Feature: Workflow migration
       """
 
     Examples:
-    | nid |
-    | 1   |
-    | 2   |
+      | nid |
+      | 1   |
+      | 2   |
 
   @112a195c
   Scenario Outline: Published articles can be transitioned to Draft, Published,
