@@ -10,7 +10,6 @@ dependencies:
   module:
     - image_widget_crop
     - path
-    - workbench_moderation
 _core:
   default_config_hash: kyoAHlZTGIuGTaQuBblGBk8EhfnVKOl19_0j5WbpQqM
 id: media.image.default

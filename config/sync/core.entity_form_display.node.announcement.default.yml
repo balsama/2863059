@@ -3,11 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.announcement.field_announcement_text
     - node.type.announcement
   module:
     - path
-    - workbench_moderation
 id: node.announcement.default
 targetEntityType: node
 bundle: announcement
@@ -19,14 +17,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_announcement_text:
-    weight: 121
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -62,6 +52,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5

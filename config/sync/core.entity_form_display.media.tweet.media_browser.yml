@@ -9,7 +9,6 @@ dependencies:
     - media.type.tweet
   module:
     - path
-    - workbench_moderation
 _core:
   default_config_hash: 7z9YUmSI9wIGsoEtOxplD8fY7XPhXqImN2bEU9zc5sI
 id: media.tweet.media_browser

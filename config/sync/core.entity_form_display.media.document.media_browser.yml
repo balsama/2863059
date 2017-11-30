@@ -9,7 +9,6 @@ dependencies:
     - media.type.document
   module:
     - path
-    - workbench_moderation
 _core:
   default_config_hash: X8KEO5iV-XcsBLSyLEMOMv3sw-WxXeIdWnZZ1btyyVU
 id: media.document.media_browser

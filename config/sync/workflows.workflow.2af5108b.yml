@@ -1,0 +1,116 @@
+uuid: ec4ad1bb-f2bf-4a84-96ec-036501fecfa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.announcement
+    - node.type.offering
+  module:
+    - content_moderation
+id: 2af5108b
+label: 'Announcement Offering content items'
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      published: false
+      default_revision: true
+      weight: 1
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: 2
+    needs_legal_review:
+      label: 'Needs Legal Review'
+      published: false
+      default_revision: false
+      weight: 3
+    needs_review:
+      label: 'Needs Review'
+      published: false
+      default_revision: false
+      weight: 4
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 5
+  transitions:
+    archived_published:
+      label: Un-archive
+      from:
+        - archived
+      to: published
+      weight: 1
+    draft_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+      to: draft
+      weight: 2
+    draft_needs_review:
+      label: 'Request Review'
+      from:
+        - draft
+      to: needs_review
+      weight: 3
+    draft_published:
+      label: Publish
+      from:
+        - draft
+      to: published
+      weight: 4
+    legal_review_to_publish:
+      label: Publish
+      from:
+        - needs_legal_review
+      to: published
+      weight: 5
+    needs_review_draft:
+      label: 'Send Back to Draft'
+      from:
+        - needs_review
+      to: draft
+      weight: 6
+    needs_review_needs_review:
+      label: 'Keep in Review'
+      from:
+        - needs_review
+      to: needs_review
+      weight: 7
+    needs_review_published:
+      label: Publish
+      from:
+        - needs_review
+      to: published
+      weight: 8
+    published_archived:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 9
+    published_draft:
+      label: 'Create New Draft'
+      from:
+        - published
+      to: draft
+      weight: 10
+    published_published:
+      label: Publish
+      from:
+        - published
+      to: published
+      weight: 11
+    review_to_legal_review:
+      label: 'Request Legal Review'
+      from:
+        - needs_review
+      to: needs_legal_review
+      weight: 12
+  entity_types:
+    node:
+      - announcement
+      - offering

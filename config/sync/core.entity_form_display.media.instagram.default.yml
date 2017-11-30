@@ -8,7 +8,6 @@ dependencies:
     - media.type.instagram
   module:
     - path
-    - workbench_moderation
 _core:
   default_config_hash: 59ziPzJNPAqMrCE-SBvcUQxVXORfAJ_tkMlS4sIUAFQ
 id: media.instagram.default

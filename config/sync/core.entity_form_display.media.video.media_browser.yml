@@ -9,7 +9,6 @@ dependencies:
     - media.type.video
   module:
     - path
-    - workbench_moderation
 _core:
   default_config_hash: Wft8ifOMAlgFjAvTyWmpKS_RnTcBkckjM2u90vzd7cM
 id: media.video.media_browser
