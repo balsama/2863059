@@ -13,8 +13,7 @@ php:
   - 7.0
 
 env:
-  - VERSION=STABLE
-  - VERSION=CM_MIGRATE
+  - VERSION=STABLE TAGS=workflow_post_migrate
 
 addons:
   apt:
@@ -74,17 +73,6 @@ install:
   - drush site-install sample --yes --account-pass=admin --db-url=mysql://lightning:lightning@127.0.0.1/drupal
   - drush config-set system.logging error_level all --yes
 
-  # Migrate to Content Moderation.
-  - 'if [ $VERSION = "CM_MIGRATE" ]; then
-      cd $TRAVIS_BUILD_DIR;
-      composer require acquia/lightning:dev-content-moderation-migration --no-update;
-      composer update acquia/lightning --with-dependencies;
-      composer update acquia/lightning --with-dependencies;
-      composer update acquia/lightning --with-dependencies;
-      composer info acquia/lightning;
-      composer info drupal/wbm2cm;
-    fi;'
-
   # Run updates, if necessary.
   - cd $TRAVIS_BUILD_DIR/docroot
   - drush updatedb --yes
@@ -108,7 +96,7 @@ before_script:
   - sleep 5
 
 script:
-  - ../bin/behat --strict --config ./sites/default/files/behat.yml --tags=workflow_migrate
+  - ../bin/behat --strict --config ./sites/default/files/behat.yml --tags=$TAGS
 
 matrix:
   fast_finish: true
