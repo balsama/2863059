@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c674f75e71923290e2548f77323d16e9",
+    "content-hash": "447dbb8111bf5ede999ff4f63dd42cfa",
     "packages": [
         {
             "name": "acquia/lightning",
-            "version": "dev-content-moderation-migration",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "f67720f6ee1716cc294507098b846aa88ad0dde2"
+                "reference": "b15be8ddba37e3169e16328e81ddef4782a0538a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/f67720f6ee1716cc294507098b846aa88ad0dde2",
-                "reference": "f67720f6ee1716cc294507098b846aa88ad0dde2",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/b15be8ddba37e3169e16328e81ddef4782a0538a",
+                "reference": "b15be8ddba37e3169e16328e81ddef4782a0538a",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "drupal/token": "^1.0",
                 "drupal/video_embed_field": "2.0.0-alpha1",
                 "drupal/views_infinite_scroll": "^1.1",
-                "drupal/wbm2cm": "2.x-dev",
+                "drupal/wbm2cm": "dev-2.x",
                 "drupal/workbench_moderation": "1.2.0",
                 "oomphinc/composer-installers-extender": "^1.1"
             },
@@ -174,7 +174,7 @@
                 "GPL-2.0+"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2017-11-22T19:55:59+00:00"
+            "time": "2017-12-01T16:27:50+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -3646,7 +3646,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1506893943",
+                    "datestamp": "1511480585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3862,7 +3862,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/wbm2cm",
-                "reference": "525f7f9fbbe52de5e85301a6f72e5d2536b6ba29"
+                "reference": "5e71f75e8487cd0a9014dec15a04b4548bd6cabe"
             },
             "require": {
                 "drupal/core": "~8.4"
@@ -3874,7 +3874,7 @@
                 "drupal/media_entity": "^1",
                 "drupal/migrate_tools": "4.x-dev",
                 "drupal/workbench_moderation": "~1",
-                "drush/drush": "8.1.15",
+                "drush/drush": "^9",
                 "mikey179/vfsstream": "^1.6",
                 "oomphinc/composer-installers-extender": "dev-master",
                 "phpunit/phpunit": "~4"
@@ -3885,8 +3885,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha1+5-dev",
-                    "datestamp": "1511977685",
+                    "version": "8.x-2.0-alpha2+2-dev",
+                    "datestamp": "1512070985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3899,6 +3899,11 @@
                     "www/modules/{$name}": [
                         "type:drupal-module"
                     ]
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3914,7 +3919,7 @@
                 "push": [
                     "rm -rf ./www/modules/wbm2cm",
                     "mkdir -p ./www/modules/wbm2cm",
-                    "cp -R -f wbm2cm.* migrations src tests ./www/modules/wbm2cm"
+                    "cp -R -f composer.json wbm2cm.* migrations src tests ./www/modules/wbm2cm"
                 ],
                 "pull": [
                     "cp -R -f ./www/modules/wbm2cm/* ."
@@ -3943,7 +3948,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/wbm2cm"
             },
-            "time": "2017-11-29T20:51:13+00:00"
+            "time": "2017-12-01T14:27:31+00:00"
         },
         {
             "name": "drupal/workbench_moderation",
