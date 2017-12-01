@@ -1,4 +1,4 @@
-uuid: 24d573fe-beb1-4205-b5ee-c21b9f123b22
+uuid: 01b0792f-9ad5-4370-a597-8a2427ea6c43
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - content_moderation
 id: 00c7e3ae
-label: 'Moderated Block Moderated Translatable Block custom block entities; Article Basic page content items'
+label: 'Workflow 1'
 type: content_moderation
 type_settings:
   states:

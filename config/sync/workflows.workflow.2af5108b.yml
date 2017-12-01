@@ -1,4 +1,4 @@
-uuid: ec4ad1bb-f2bf-4a84-96ec-036501fecfa3
+uuid: b6a78af2-ae32-40bc-b2e9-6312a1e0d7ff
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - content_moderation
 id: 2af5108b
-label: 'Announcement Offering content items'
+label: 'Workflow 2'
 type: content_moderation
 type_settings:
   states:

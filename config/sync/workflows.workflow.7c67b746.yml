@@ -1,4 +1,4 @@
-uuid: 627359fd-d0ef-4634-8d26-fad2e7d9c5af
+uuid: c05a55ff-db44-473a-a407-afcc86e2a940
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - content_moderation
 id: 7c67b746
-label: 'Press Release content items'
+label: 'Workflow 3'
 type: content_moderation
 type_settings:
   states:

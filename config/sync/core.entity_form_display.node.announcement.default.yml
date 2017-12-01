@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.announcement.field_announcement_text
     - node.type.announcement
   module:
     - path
@@ -17,6 +18,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_announcement_text:
+    weight: 121
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   langcode:
     type: language_select
     weight: 2
